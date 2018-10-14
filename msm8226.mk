@@ -20,8 +20,7 @@ $(call inherit-product, vendor/motorola/msm8226-common/msm8226-common-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -117,10 +116,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m
-
-# DeviceSettings
-PRODUCT_PACKAGES += \
-    DeviceSettings
 
 # DRM
 PRODUCT_PACKAGES += \
